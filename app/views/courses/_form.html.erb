@@ -31,11 +31,16 @@
     <%= form.text_area :description, placeholder: "Description", length: "800", class: "materialize-textarea"%>
   </div>
 
+<form action="#">
   <div class="field">
+   <label for="public">
     <%= form.check_box :public, id: :public, class: "filled-in"%>
-    <label for="public">Public</label>
+        <span>Public</span>
+   </label>
   </div>
+
 
   <button class="btn" type="submit">Submit</button>
   <%= link_to "Go to all courses", courses_path, class: "btn" %>
+  </form>
   <% end %>
