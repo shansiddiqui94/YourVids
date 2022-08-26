@@ -15,8 +15,8 @@ gem 'devise'
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
-gem 'pg'
+gem 'sqlite3' #, group: :development
+ gem 'pg' # '0.18.1', group: :production
 
 # rails refactor
 gem 'rails_12factor', group: :production
