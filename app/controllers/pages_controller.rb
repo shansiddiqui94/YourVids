@@ -9,7 +9,6 @@ class PagesController < ApplicationController
 
   def home
     @courses = Course.where(public: true) 
-    # Orginally I had all courses that made it through to Public files, now where public checkbox is true we can only select those videos. 
   end
 
   def landing
