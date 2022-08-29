@@ -15,14 +15,16 @@
 
   <tbody>
       <% @courses.each do |course| %>
-          <tr>
+          <tr class="row">
             <td><%= link_to course.title, course %></td>
-            <td>
+            <td class="col s0" style="text-align: center">
               <%= link_to edit_course_path(course) do %>
                   <i class="material-icons">edit</i>
                   <%end%>
+              </td>
 
-              <%= link_to course, method: :delete, data: {confirm: 'Are you sure?'} do %>
+              <td class="col s0" style="text-align: center">
+              <%= button_to course, method: :delete, data: {confirm: 'Are you sure?'} do %>
                   <i class="material-icons">delete</i>
                 <%end%>
             </td>
